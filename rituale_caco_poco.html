@@ -10,7 +10,6 @@
       font-family: monospace;
       text-align: center;
       padding: 50px;
-      overflow-x: hidden;
     }
     h1 {
       color: red;
@@ -27,21 +26,16 @@
       font-style: italic;
       animation: glitch 0.3s infinite;
     }
+    .logo {
+      width: 250px;
+      height: 250px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
     audio {
       width: 80%;
       margin-top: 30px;
-    }
-    .logo {
-      width: 400px;
-      height: 400px;
-      margin-top: 30px;
-      border-radius: 8px;
-    }
-    .gif {
-      width: 80%;
-      max-width: 800px;
-      margin-top: 30px;
-      border-radius: 8px;
+      accent-color: #0f0; /* tasti verdi */
     }
     @keyframes intestinoCosmico {
       0%   { transform: translateY(0) rotate(0deg) scale(1); }
@@ -60,7 +54,10 @@
 <body>
   <h1>🌍 Rituale Caco Poco Ma Caco Meglio 🌍</h1>
   <p class="glitch">Questo è il portale intestinale del collettivo Undersound. Ogni glitch è sacro.</p>
-  <img src="gif/loop.gif" alt="GIF intestinale" class="gif">
-  <audio controls src="audio/rituale.mp3"></audio>
+  <img src="logo_cu.png" alt="Logo rituale" class="logo">
+  <audio controls>
+    <source src="caco_loop.mp3" type="audio/mpeg">
+    Il tuo browser non supporta l'audio rituale.
+  </audio>
 </body>
 </html>
