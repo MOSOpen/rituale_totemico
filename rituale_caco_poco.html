@@ -3,30 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>🌍 Rituale Caco Poco Ma Caco Meglio 🌍</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: monospace;
+      text-align: center;
+      padding: 50px;
+      overflow-x: hidden;
+    }
+    h1 {
+      color: red;
+      font-size: 2em;
+      animation: intestinoCosmico 3s infinite ease-in-out;
+    }
+    p {
+      margin: 20px auto;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    .glitch {
+      color: #f0f;
+      font-style: italic;
+      animation: glitch 0.3s infinite;
+    }
+    audio {
+      width: 80%;
+      margin-top: 30px;
+    }
+    img {
+      width: 80%;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+    .rituale-link {
+      margin-top: 40px;
+    }
+    .rituale-link img {
+      width: 100%;
+      max-width: 600px;
+      border: 3px solid #0f0;
+      border-radius: 8px;
+    }
+    .rituale-link p {
+      color: #0f0;
+      font-family: monospace;
+      margin-top: 10px;
+      animation: intestinoCosmico 3s infinite ease-in-out;
+    }
+    @keyframes intestinoCosmico {
+      0%   { transform: translateY(0) rotate(0deg) scale(1); }
+      25%  { transform: translateY(-5px) rotate(-1deg) scale(1.05); }
+      50%  { transform: translateY(5px) rotate(1deg) scale(0.95); }
+      75%  { transform: translateY(-3px) rotate(-0.5deg) scale(1.02); }
+      100% { transform: translateY(0) rotate(0deg) scale(1); }
+    }
+    @keyframes glitch {
+      0%   { text-shadow: 2px 0 red; }
+      20%  { text-shadow: -2px 0 blue; }
+      40%  { text-shadow: 2px 0 green; }
+      60%  { text-shadow: -2px 0 yellow; }
+      80%  { text-shadow: 2px 0 magenta; }
+      100% { text-shadow: -2px 0 cyan; }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-
-    <h1>🌍 Caco Poco Ma Caco Meglio 🌍</h1>
-    <div class="titolo-rituale">💩 Transito Quantico Metabolico 💩</div>
-    <div class="titolo-rituale">⚡ Effetto Farfalla Intestinale ⚡</div>
-    <div class="titolo-rituale">🧠 Portale del Retto Globale 🧠</div>
-
-    <div class="gif-wrapper">
-      <img src="loop-gif.gif" alt="Loop intestinale glitchato">
-    </div>
-
-    <div class="glitch">
-      Questo non è un film.  
-      È una cacca sacra che si ripete all’infinito.  
-      Ogni frame è un rant.  
-      Ogni pixel è una scorreggia.  
-      Ogni intestino è un portale.
-    </div>
-
+  <h1>🌍 Caco Poco Ma Caco Meglio 🌍</h1>
+  <div class="rituale-link">
+    <img src="logo_cu.png" alt="Collettivo Undersound">
+    <p>COLLETTIVO UNDERSOUND</p>
   </div>
+
+  <div class="titolo-rituale">💩 Transito Quantico Metabolico 💩</div>
+  <div class="titolo-rituale">⚡ Effetto Farfalla Intestinale ⚡</div>
+  <div class="titolo-rituale">🧠 Portale del Retto Globale 🧠</div>
+
+  <img src="loop-gif.gif" alt="Loop intestinale glitchato">
+
+  <div class="glitch">
+    Questo non è un film.<br>
+    È una cacca sacra che si ripete all’infinito.<br>
+    Ogni frame è un rant.<br>
+    Ogni pixel è una scorreggia.<br>
+    Ogni intestino è un portale.
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="chmodati_il_sistema.mp3" type="audio/mpeg">
+    Il tuo browser non supporta l’audio.
+  </audio>
 
 </body>
 </html>
